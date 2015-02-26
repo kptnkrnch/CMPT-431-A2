@@ -26,6 +26,8 @@ static int num_trials = 5;
 static int num_threads = 1;
 static int64_t grainsize = 0;
 
+//#define DEBUG
+
 // Data arrays
 static int64_t* data_array;
 
@@ -54,6 +56,7 @@ void driver()
     }
     assert(answer == accumulator);
     
+    #ifdef DEBUG
     std::cout << "trial: " << trial << ", ";
     std::cout << "user: " << ppp::getuser() << ", ";
     std::cout << "host: " << ppp::gethost() << ", ";
@@ -61,6 +64,7 @@ void driver()
     std::cout << "particles: " << num_particles << ", ";
     std::cout << "grainsize: " << grainsize << ", ";
     std::cout << "seconds: " << seconds << "\n";
+    #endif
     
     elapsed_time += seconds;
   }

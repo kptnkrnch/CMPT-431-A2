@@ -22,6 +22,8 @@
 #include "parallel_sort.h"
 #include "parallel_for.h"
 
+//#define DEBUG
+
 static int64_t distance(int64_t a, int64_t b);
 int64_t check_two(int64_t particle, int64_t num_particles, int64_t *location, int64_t *weight, int64_t *radius);
 
@@ -167,6 +169,7 @@ void driver()  // Called for each thread
       }
     }
     
+    #ifdef DEBUG
     std::cout << "trial: " << trial << ", ";
     std::cout << "user: " << ppp::getuser() << ", ";
     std::cout << "host: " << ppp::gethost() << ", ";
@@ -175,6 +178,7 @@ void driver()  // Called for each thread
     std::cout << "grainsize: " << grainsize << ", ";
     std::cout << "sort_seconds: " << sort_seconds << ", ";
     std::cout << "compute_seconds: " << compute_seconds << "\n";
+    #endif
     
     sort_elapsed_time += sort_seconds;
     compute_elapsed_time += compute_seconds;
