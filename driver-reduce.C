@@ -69,7 +69,7 @@ void driver()
     elapsed_time += seconds;
   }
   
-  std::cout << "average:  ";
+  //std::cout << "average:  ";
   std::cout << "user: " << ppp::getuser() << ", ";
   std::cout << "host: " << ppp::gethost() << ", ";
   std::cout << "threads: " << num_threads << ", ";

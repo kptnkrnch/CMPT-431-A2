@@ -184,7 +184,7 @@ void driver()  // Called for each thread
     compute_elapsed_time += compute_seconds;
   }
   
-  std::cout << "average:  ";
+  //std::cout << "average:  ";
   std::cout << "user: " << ppp::getuser() << ", ";
   std::cout << "host: " << ppp::gethost() << ", ";
   std::cout << "threads: " << num_threads << ", ";
