@@ -185,13 +185,13 @@ void driver()  // Called for each thread
   }
   
   //std::cout << "average:  ";
-  std::cout << "user: " << ppp::getuser() << ", ";
-  std::cout << "host: " << ppp::gethost() << ", ";
-  std::cout << "threads: " << num_threads << ", ";
-  std::cout << "particles: " << num_particles << ", ";
-  std::cout << "grainsize: " << grainsize << ", ";
-  std::cout << "sort_seconds: " << sort_elapsed_time/double(num_trials) << ", ";
-  std::cout << "compute_seconds: " << compute_elapsed_time/double(num_trials) << "\n";
+  std::cout <<  ppp::getuser() << ", ";
+  std::cout <<  ppp::gethost() << ", ";
+  std::cout <<  num_threads << ", ";
+  std::cout <<  num_particles << ", ";
+  std::cout <<  grainsize << ", ";
+  std::cout << sort_elapsed_time/double(num_trials) << ", ";
+  std::cout << compute_elapsed_time/double(num_trials) << "\n";
 }
 
 static struct option long_options[] =

@@ -70,12 +70,12 @@ void driver()
   }
   
   //std::cout << "average:  ";
-  std::cout << "user: " << ppp::getuser() << ", ";
-  std::cout << "host: " << ppp::gethost() << ", ";
-  std::cout << "threads: " << num_threads << ", ";
-  std::cout << "particles: " << num_particles << ", ";
-  std::cout << "grainsize: " << grainsize << ", ";
-  std::cout << "seconds: " << elapsed_time/double(num_trials) << "\n";
+  std::cout << ppp::getuser() << ", ";
+  std::cout << ppp::gethost() << ", ";
+  std::cout << num_threads << ", ";
+  std::cout << num_particles << ", ";
+  std::cout << grainsize << ", ";
+  std::cout << elapsed_time/double(num_trials) << "\n";
 }
 
 static struct option long_options[] =
