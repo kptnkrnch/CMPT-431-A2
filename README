@@ -1,0 +1,9 @@
+for each run script
+
+./<script name> <output file> <#particles> <#threads>
+
+inside script has global variables for timeout, etc
+
+MAXTIME= max time for script run in seconds
+NUMTRI= # of trials
+STARTSIZE= starting grain size
