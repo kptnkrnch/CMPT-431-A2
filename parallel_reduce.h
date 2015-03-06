@@ -40,10 +40,6 @@ namespace ppp {
       void execute() {
         PPP_DEBUG_MSG("Execute: [" + to_string(m_left) + ", " + to_string(m_right) + "]");
         assert(m_left < m_right);
-
-        if (m_right-m_left <= 1) {
-          return;
-        }
         
         if (m_right-m_left < m_grainsize) {
           PPP_DEBUG_MSG("sum: [" + to_string(m_left) + ", " + to_string(m_right) + "]");
