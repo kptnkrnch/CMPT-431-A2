@@ -18,7 +18,11 @@ namespace ppp {
 
   void TaskGroup::spawn(Task& t) {
     assert(g_queues_ptr != NULL);
-    TaskQueue& queue = g_queues_ptr[ppp::get_thread_id()];  // ASSIGNMENT: use per-thread task queue with "get_thread_id()"
+    #ifdef Q_STEAL
+      TaskQueue& queue = g_queues_ptr[ppp::get_thread_id()];  // ASSIGNMENT: use per-thread task queue with "get_thread_id()"
+    #else
+      TaskQueue& queue = g_queues_ptr[0];
+    #endif
     m_wait_counter.fetch_and_inc();
     t.setCounter(&m_wait_counter);
     queue.enqueue(&t);
@@ -26,7 +30,11 @@ namespace ppp {
   
   void process_tasks(const atomic<int>* counter)
   {
-    TaskQueue& queue = g_queues_ptr[ppp::get_thread_id()];  // ASSIGNMENT: use per-thread task queue with "get_thread_id()"
+    #ifdef Q_STEAL
+      TaskQueue& queue = g_queues_ptr[ppp::get_thread_id()];  // ASSIGNMENT: use per-thread task queue with "get_thread_id()"
+    #else
+      TaskQueue& queue = g_queues_ptr[0];
+    #endif
 
     while (counter->get() != 0) {
       PPP_DEBUG_EXPR(queue.size());
@@ -38,7 +46,9 @@ namespace ppp {
       if (task != NULL) {
         task->execute(); // overloaded method
         task->post_execute(); // cleanup, method of base class
-      } else {
+      }
+      #ifdef Q_STEAL
+      else {
       	int id = ppp::get_thread_id() + 1;
       	for (int n = 0; n < ppp::get_thread_count() - 1; n++) {
       		if (id >= ppp::get_thread_count()) {
@@ -54,6 +64,7 @@ namespace ppp {
 		  	id++;
       	}
       }
+      #endif
     }
   }
 }
