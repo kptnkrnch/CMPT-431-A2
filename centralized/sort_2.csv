@@ -1,0 +1,17 @@
+
+model name : AMD Opteron(tm) Processor 6172
+user, host, threads, particles, grainsize, seconds
+
+model name : AMD Opteron(tm) Processor 6172
+user, host, threads, particles, grainsize, seconds
+
+model name : AMD Opteron(tm) Processor 6172
+user, host, threads, particles, grainsize, seconds
+jkcampbe, <unknown>, 2, 40000000, 1000, 2.65817
+jkcampbe, <unknown>, 2, 40000000, 900, 2.67044
+jkcampbe, <unknown>, 2, 40000000, 800, 2.69799
+jkcampbe, <unknown>, 2, 40000000, 700, 2.69236
+jkcampbe, <unknown>, 2, 40000000, 600, 2.68869
+jkcampbe, <unknown>, 2, 40000000, 500, 2.71246
+jkcampbe, <unknown>, 2, 40000000, 400, 2.72592
+jkcampbe, <unknown>, 2, 40000000, 300, 2.7545
