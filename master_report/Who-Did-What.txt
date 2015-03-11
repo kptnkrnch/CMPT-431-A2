@@ -4,7 +4,7 @@ Adam Penner (adpenner@sfu.ca)
 - Created scripts for test automation
 - Completed driver-reduce code portion
 - Completed a report for the AMD FX-8350 machine
-- Modified Task-Group.C to allow easy swapping between distributed and base centralized code with use of custom Q_STEAL compiler flag
+- Modified TaskGroup.C to allow easy swapping between distributed and base centralized code with use of custom Q_STEAL compiler flag
 
 Joshua Campbell (jkcampbe@sfu.ca)
 ----------------------------------
