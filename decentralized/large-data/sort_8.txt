@@ -1,0 +1,31 @@
+
+model name : AMD Opteron(tm) Processor 6172
+user, host, threads, particles, grainsize, seconds
+jkcampbe, <unknown>, 8, 40000000, 1000, 1.17363
+jkcampbe, <unknown>, 8, 40000000, 900, 1.16401
+jkcampbe, <unknown>, 8, 40000000, 800, 1.16442
+jkcampbe, <unknown>, 8, 40000000, 700, 1.16766
+jkcampbe, <unknown>, 8, 40000000, 600, 1.15622
+jkcampbe, <unknown>, 8, 40000000, 500, 1.17055
+jkcampbe, <unknown>, 8, 40000000, 400, 1.18011
+jkcampbe, <unknown>, 8, 40000000, 300, 1.17247
+jkcampbe, <unknown>, 8, 40000000, 200, 1.1667
+jkcampbe, <unknown>, 8, 40000000, 100, 1.18258
+jkcampbe, <unknown>, 8, 40000000, 90, 1.16512
+jkcampbe, <unknown>, 8, 40000000, 80, 1.18171
+jkcampbe, <unknown>, 8, 40000000, 70, 1.18825
+jkcampbe, <unknown>, 8, 40000000, 60, 1.20666
+jkcampbe, <unknown>, 8, 40000000, 50, 1.2044
+jkcampbe, <unknown>, 8, 40000000, 40, 1.21816
+jkcampbe, <unknown>, 8, 40000000, 30, 1.21841
+jkcampbe, <unknown>, 8, 40000000, 20, 1.25234
+jkcampbe, <unknown>, 8, 40000000, 10, 1.38391
+jkcampbe, <unknown>, 8, 40000000, 9, 1.43903
+jkcampbe, <unknown>, 8, 40000000, 8, 1.46973
+jkcampbe, <unknown>, 8, 40000000, 7, 1.54429
+jkcampbe, <unknown>, 8, 40000000, 6, 1.67713
+jkcampbe, <unknown>, 8, 40000000, 5, 1.82093
+jkcampbe, <unknown>, 8, 40000000, 4, 2.07736
+jkcampbe, <unknown>, 8, 40000000, 3, 2.55981
+jkcampbe, <unknown>, 8, 40000000, 2, 3.59386
+jkcampbe, <unknown>, 8, 40000000, 1, 3.70407
